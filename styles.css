@@ -8,8 +8,10 @@
 .container{
     display: flex;
     min-height: 100vh;
-
+    min-width: 100vw;
+   
 }
+
 .sidebar   {
     background-color: #121619;
     width: 600px; 
@@ -26,15 +28,14 @@
 
 
 .sidebar .description-header{
-
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 25px;
     text-align: center;
     color: #ffffff;
-    padding-left: 20px;
-    padding-bottom: 10px;
+    padding-left: 120px;
+    padding-bottom: 30px;
 }
 
 .sidebar.hide .description-header{
@@ -65,8 +66,6 @@
     text-align: center;
 }
 
-
-
 .sidebar .main .list-item .description{
     font-style: normal;
     font-weight: 400;
@@ -75,7 +74,6 @@
     text-align: center;
     color: #ffffff;
 }
-
 
 .sidebar.hide .main .list-item .description{
     display: none;
@@ -94,7 +92,7 @@
     transition: all ease-in .2s;
 }
 .sidebar .main .list-item:hover {
-    background: #00A650;
+    background: #87cefa;
     transition: all ease-in .2s;
 }
 .maincontent
@@ -102,6 +100,7 @@
     background-color: #F2F2F2;
     height: 100vh;
     width: 100vw;
+    
 }
 
 
@@ -125,22 +124,44 @@
 .className .hMenu3 {
     transform: translate(0, -9px) rotate(45deg);
 }
+/* materi uatama */
 .maincontent .materi1{
     display: block;
     padding: 30px 150px 0 150px; 
-
+    flex-grow: 1;
 }
-.maincontent .materi1 h2{
+.maincontent h2{
     text-align: center;
     color: #F2F2F2;
     font-size: 60px;
     font-weight: 300;
-    background-color: #00A650;  
+    background-color:  #121619;  
+    margin: 0 50px;
+}
+
+.gambar-1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width : 550px;
+    height : 400px;
+
+}
+.materi1 {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ grid-gap: 10px;
 }
 .maincontent .materi1 p{
-    padding-top: 30px;
-    text-align: center;
+    padding-top: 10px;
     font-size: 30px;
+}
+.gambar-2 {
+    display: block;
+    align-items: end;
+    padding-left: 60px;
+    width: 450px;
+    height: 500px;
 }
 /* .pengenalan {
     color: #4b4b4b;
