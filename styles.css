@@ -5,15 +5,9 @@
 html, body{
     margin: 0;
     padding: 0;
+    background-color: #9fd3c7;
 }
-body {
-    /* background-image: url(/package/Online\ world-amico.png);
-    backdrop-filter: blur(2px);
-    background-position: end;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    background-color: #78BBAB;
-}
+
 nav > a {
     margin-left: 20px;
     color: black;
@@ -34,7 +28,7 @@ a {
     color: black;
     font-size: 24px;
 }
-button {
+.btn-0{
     font-size: medium;
     background-color: white;
     color: black;
@@ -48,6 +42,9 @@ button {
     align-items: center;
     position: sticky;
     justify-content: space-between;
+    padding: 5px 90px;
+    position: sticky;
+    top: 0;
     background-color: #87CEFA;
     z-index: 5;
 }
@@ -67,23 +64,41 @@ button {
     .video-container video {
       width: 100%; /* Mengisi lebar kontainer */
       height: auto; /* Menyesuaikan tinggi sesuai perbandingan aspek video */
+
+    }
+    .container-materi h2 p .btn-1 {
+        width: 100%; /* Mengisi lebar kontainer */
+      height: auto; /* Menyesuaikan tinggi sesuai perbandingan aspek video */
     }
 }
 .container {
-    margin: 0 310px;
+    background-color: #9fd3c7;
+    margin-bottom: 15px;
+}
+
+.container-materi {
+    position: relative;
     color: #FFFFFF;
 }
-.container h2 {
+.container-materi h2 {
     text-align: center;
     font-size: 70px;
     margin-bottom: 5px;
 }
-.container p {
- 
+.container-materi p {
     text-align: center;
     font-size: 30px;
-    margin: 0 180px
+
 }
-  
+#bawah {
+    padding-top: 0;
+    background-color: #385170;
+}
+.btn-1{
+
+    width: 750px;
+    height: 40px;
+    font-size: 25px;
+}
   
   
