@@ -1,219 +1,89 @@
-*
-{
-    font-family: 'Ubuntu', sans-serif;
-    padding: 0;
+* {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+html, body{
     margin: 0;
+    padding: 0;
+}
+body {
+    /* background-image: url(/package/Online\ world-amico.png);
+    backdrop-filter: blur(2px);
+    background-position: end;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: #78BBAB;
+}
+nav > a {
+    margin-left: 20px;
+    color: black;
+}
+nav > a:hover{
+    color: #FFFFFF;
 }
 
-.container{
-    display: flex;
-    min-height: 100vh;
-    min-width: 100vw;
-   
-}
-
-.sidebar   {
-    background-color: #121619;
-    width: 600px; 
-    padding: 24px;
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    transition: all ease-in .3s;
-}
-.sidebar.hide {
-    width: 87px;
-    transition: all ease-out .3s;
-}
-
-
-.sidebar .description-header{
-    font-style: normal;
+h1 {
     font-weight: 700;
-    font-size: 30px;
-    line-height: 25px;
-    text-align: center;
-    color: #ffffff;
-    padding-left: 120px;
-    padding-bottom: 30px;
+    font-size: 48px;
+    margin: 10px 15px;
+    text-shadow: #FFFFFF;
 }
 
-.sidebar.hide .description-header{
-    display: none;
-}
-.sidebar a{
+a {
     text-decoration: none;
+    color: black;
+    font-size: 24px;
 }
-.sidebar .header .list-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px 10px;
-    border-radius: 8px;
+button {
+    font-size: medium;
+    background-color: white;
+    color: black;
+    width: 150px;
     height: 40px;
-    box-sizing: border-box;
-    text-align: center;
-}
-.sidebar .list-item .bxl-html5{
-    color: white;
-    font-size: 40px;
-    padding-bottom: 10px;
-}
-.sidebar i {
-    color: white;
-    margin-right: 8px;
-    font-size: 25px;
-    text-align: center;
+    margin: 30px 30px;
 }
 
-.sidebar .main .list-item .description{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 23px;
-    line-height: 1.5;
-    text-align: center;
-    color: #ffffff;
-}
-
-.sidebar.hide .main .list-item .description{
-    display: none;
-}
-.sidebar .main .list-item .icon {
-    margin-right: 12px;
-
-}
-.sidebar .main .list-item {
+.header-1 {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    padding: 20px 10px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    transition: all ease-in .2s;
+    position: sticky;
+    justify-content: space-between;
+    background-color: #87CEFA;
+    z-index: 5;
 }
-.sidebar .main .list-item:hover {
-    background: #87cefa;
-    transition: all ease-in .2s;
-}
-.maincontent
-{
-    background-color: #F2F2F2;
-    height: 100vh;
-    width: 100vw;
-    
+.header-1 h1, nav, button {
+  flex-shrink: 0;
 }
 
-
-.hamMenu {
-    cursor: pointer;
-}
-.hMenu1, .hMenu2, .hMenu3 {
-    width: 35px;
-    height: 4px;
-    border-radius: 15px;
-    background-color: #121619;
-    margin: 5px;
-    transition: all 0.5s;
-}
-.className .hMenu1 {
-    transform: translate(0, 9px) rotate(-45deg);
-}
-.className .hMenu2 {
-    opacity: 0;
-}
-.className .hMenu3 {
-    transform: translate(0, -9px) rotate(45deg);
-}
-/* materi uatama */
-.maincontent .materi1{
-    display: block;
-    padding: 30px 150px 0 150px; 
-    flex-grow: 1;
-}
-.maincontent h2{
-    text-align: center;
-    color: #F2F2F2;
-    font-size: 60px;
-    font-weight: 300;
-    background-color:  #121619;  
-    margin: 0 50px;
-}
-
-.gambar-1{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width : 550px;
-    height : 400px;
-
-}
-.materi1 {
- display: grid;
- grid-template-columns: repeat(2, 1fr);
- grid-gap: 10px;
-}
-.maincontent .materi1 p{
-    padding-top: 10px;
-    font-size: 30px;
-}
-.gambar-2 {
-    display: block;
-    align-items: end;
-    padding-left: 60px;
-    width: 450px;
-    height: 500px;
-}
-/* .pengenalan {
-    color: #4b4b4b;
-    top: 15%;
-    text-align: center;
-}
-.pengenalan h1{
-    font-size: 75px;
-    text-transform: uppercase;
-}
-.pengenalan p{
-    font-size: 45px;
-} */
-
-
-/* #full-services {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 250px;
-    margin-left: 50px;
-    text-align: center;
-    margin-right: 50px;
-}
-.servis {
-    border-radius: 15px ;
-    border: 2px solid;
-    border-color: #4b4b4b;
-}
-.servis img{
-    background-size: cover;
-}
-.servis-tag {
-    font-size: 10px;
-    margin: 1rem   0;
+.video-container {
     display: flex;
-    gap: 10px;
-    color: #4b4b4b;
     justify-content: center;
     align-items: center;
+    height: 100vh; 
+    margin-bottom: 30px;
+  }
+
+@media screen and (max-width: 1250px) {
+    .video-container video {
+      width: 100%; /* Mengisi lebar kontainer */
+      height: auto; /* Menyesuaikan tinggi sesuai perbandingan aspek video */
+    }
 }
-.servis h3 {
-    background-color:  #00A650;
-    margin: 10px 50px;
+.container {
+    margin: 0 310px;
+    color: #FFFFFF;
 }
-.servis a{
-    color: white;
+.container h2 {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 5px;
+}
+.container p {
+ 
+    text-align: center;
     font-size: 30px;
-    text-decoration: none;
+    margin: 0 180px
 }
-.servis p{
-    color: #4b4b4b;
-    font-size: 20px;
-    margin: 30px 75px;
-} */
+  
+  
+  
