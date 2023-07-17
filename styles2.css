@@ -5,7 +5,7 @@
 html, body{
     margin: 0;
     padding: 0;
-    background-color: #142d4c;
+    background-color: #9fd3c7;
 }
 /* untuk header */
 nav > a {
@@ -53,60 +53,65 @@ a {
 .header-1 h1, nav, button {
   flex-shrink: 0;
 }
-/* untuk video */
-.video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    margin-bottom: 30px;
-  }
-
-@media screen and (max-width: 1250px) {
-    .video-container video {
-      width: 75%; 
-      height: auto; 
-
-    }
-    .container-materi h2 p #btn-1 {
-        width: 75%;
-      height: auto; 
-    }
-}
-/* untuk container */
-.container {
-    background-color: #142d4c;
-    margin-bottom: 15px;
-}
-
-.container-materi {
-    position: relative;
+/* untuk form banyak button */
+form {
+    background-color: #385170;
+    margin: 60px 320px;
     color: #FFFFFF;
+    border-radius: 20px;
+    padding-bottom: 30px;
 }
-.container-materi h2 {
+form h2 {
     text-align: center;
     font-size: 70px;
     margin-bottom: 5px;
 }
-.container-materi p {
+form p {
     text-align: center;
     font-size: 30px;
-    padding: 0 95px;
 }
-/* untuk button bawah */
-#btn-1{
-    width: 750px;
-    height: 40px;
-    font-size: 25px;
-    background-color: #385170;
+form ul{
+    list-style-type: none;
+    text-align: center;
+}
+form ul li {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#btn{
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #142d4c;
     color: aliceblue;
     border: none;
+    width: 950px;
+    height: 40px;
+    font-size: 25px;
+    text-align: left;
 }
-#btn-1:hover {
+#btn:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
     background: #FFFFFF;
     color: #142d4c;
 }
-  
-  
+@media screen and (max-width: 1250px) {
+    form h2 p{
+        width: 75%; 
+        height: auto;
+    }
+    #btn {
+    width: 75%; 
+    height: auto;
+    }
+}
+@media screen and (max-width: 650px) {
+    form h2 p{
+        width: 25%; 
+        height: auto;
+    }
+    #btn {
+    width: 75%; 
+    height: auto;
+    }
+}
